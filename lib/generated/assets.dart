@@ -9,8 +9,10 @@ class Assets {
   static const String imagesBirthday = 'assets/images/birthday.jpg';
   static const String imagesFace1 = 'assets/images/face_1.jpg';
   static const String imagesFace2 = 'assets/images/face_2.jpg';
+  static const String imagesHalloween = 'assets/images/halloween.jpg';
   static const String imagesImage = 'assets/images/image.jpg';
   static const String imagesParty = 'assets/images/party.jpg';
+  static const String imagesThanksgiving = 'assets/images/thanksgiving.jpg';
   static const String imagesWedding = 'assets/images/wedding.jpg';
 
 }

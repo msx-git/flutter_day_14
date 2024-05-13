@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_day_14/generated/assets.dart';
 import 'package:flutter_day_14/ui/ui_1/widgets/schedule.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
 class UI1 extends StatelessWidget {
   const UI1({super.key});
@@ -115,52 +116,60 @@ class UI1 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          padding: EdgeInsets.all(10.r),
-                          decoration: BoxDecoration(
-                            color: Colors.redAccent.withOpacity(0.1),
-                            borderRadius: BorderRadius.circular(12.r),
-                          ),
-                          child: Image.asset(
-                            Assets.iconsTeaLeaf,
-                            height: 35.h,
-                            width: 35.w,
-                          ),
-                        ),
-                        Container(
-                          padding: EdgeInsets.all(10.r),
-                          decoration: BoxDecoration(
-                            color: Colors.redAccent.withOpacity(0.4),
-                            borderRadius: BorderRadius.circular(12.r),
-                          ),
-                          child: Image.asset(
-                            Assets.iconsUmbrella,
-                            height: 35.h,
-                            width: 35.w,
+                        ZoomTapAnimation(
+                          child: Container(
+                            padding: EdgeInsets.all(10.r),
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent.withOpacity(0.1),
+                              borderRadius: BorderRadius.circular(12.r),
+                            ),
+                            child: Image.asset(
+                              Assets.iconsTeaLeaf,
+                              height: 35.h,
+                              width: 35.w,
+                            ),
                           ),
                         ),
-                        Container(
-                          padding: EdgeInsets.all(10.r),
-                          decoration: BoxDecoration(
-                            color: Colors.blue.withOpacity(0.1),
-                            borderRadius: BorderRadius.circular(12.r),
-                          ),
-                          child: Image.asset(
-                            Assets.iconsMapleLeaf,
-                            height: 35.h,
-                            width: 35.w,
+                        ZoomTapAnimation(
+                          child: Container(
+                            padding: EdgeInsets.all(10.r),
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent.withOpacity(0.4),
+                              borderRadius: BorderRadius.circular(12.r),
+                            ),
+                            child: Image.asset(
+                              Assets.iconsUmbrella,
+                              height: 35.h,
+                              width: 35.w,
+                            ),
                           ),
                         ),
-                        Container(
-                          padding: EdgeInsets.all(10.r),
-                          decoration: BoxDecoration(
-                            color: Colors.redAccent.withOpacity(0.1),
-                            borderRadius: BorderRadius.circular(12.r),
+                        ZoomTapAnimation(
+                          child: Container(
+                            padding: EdgeInsets.all(10.r),
+                            decoration: BoxDecoration(
+                              color: Colors.blue.withOpacity(0.1),
+                              borderRadius: BorderRadius.circular(12.r),
+                            ),
+                            child: Image.asset(
+                              Assets.iconsMapleLeaf,
+                              height: 35.h,
+                              width: 35.w,
+                            ),
                           ),
-                          child: Image.asset(
-                            Assets.iconsShower,
-                            height: 35.h,
-                            width: 35.w,
+                        ),
+                        ZoomTapAnimation(
+                          child: Container(
+                            padding: EdgeInsets.all(10.r),
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent.withOpacity(0.1),
+                              borderRadius: BorderRadius.circular(12.r),
+                            ),
+                            child: Image.asset(
+                              Assets.iconsShower,
+                              height: 35.h,
+                              width: 35.w,
+                            ),
                           ),
                         )
                       ],
